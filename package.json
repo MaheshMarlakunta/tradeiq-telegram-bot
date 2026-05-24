@@ -1,0 +1,12 @@
+{
+  "name": "tradeiq-telegram-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "@anthropic-ai/sdk": "^0.20.0"
+  }
+}
