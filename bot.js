@@ -143,7 +143,7 @@ async function parseTrade(text, lang) {
 Not a trade: {"parsed":false} — ONLY JSON.`;
 
   const msg = await anthropic.messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 250,
     system: sys,
     messages: [{ role: "user", content: text }]
@@ -162,7 +162,7 @@ async function getAIAnalysis(user) {
     ? "मेरी सबसे बड़ी कमज़ोरी, सबसे अच्छी रणनीति, और 3 तुरंत सुधार बताओ।"
     : "My biggest weakness, best strategy by numbers, and top 3 immediate improvements.";
   const msg = await anthropic.messages.create({
-    model: "claude-sonnet-4-20250514", max_tokens: 600,
+    model: "claude-haiku-4-5-20251001", max_tokens: 600,
     system: sys,
     messages: [{ role: "user", content: prompt }]
   });
